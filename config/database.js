@@ -1,7 +1,7 @@
 const mongoDB = require('mongoose');
 require('./configEnv');
 
-module.exports.dataBase = () => {
+exports.dataBase = () => {
      mongoDB.connect(
        DB_URL,
        {

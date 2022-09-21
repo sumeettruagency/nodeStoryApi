@@ -1,5 +1,5 @@
-const mongoDb = require('mongoose');
-
+const mongoDb = require('mongoose'); // access mongoos 
+// create schema 
 const storiesSchema = mongoDb.Schema({
      title: {
           type: String,
@@ -16,5 +16,5 @@ const storiesSchema = mongoDb.Schema({
 {
      timestamps: true
 })
-
+// create model and exports 
 module.exports = mongoDb.model('Stories', storiesSchema);

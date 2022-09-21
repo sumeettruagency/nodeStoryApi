@@ -1,8 +1,6 @@
 const { config } = require('dotenv');
 require('dotenv').config();
-const configEnv = {
+exports.configEnv = {
       PORT,
       DB_URL
 } = process.env;
-
-module.exports = configEnv
